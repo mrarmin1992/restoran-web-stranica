@@ -1,0 +1,224 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  background: #232323;
+}
+
+section{
+    padding: 10px 0 0 0;
+}
+
+
+h1{
+    color: #d9d9d9;
+    font-size: 300%;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+    padding: 30px 0 0 0;
+    text-align: center;
+     font-family: 'Josefin Slab', serif;
+    
+}
+.ml12 {
+  letter-spacing: 0.5em;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 50px;
+    width: 100%;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+   
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 100px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image:url(css/img/2347601_stone_185.jpg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 1% 20px 0;
+  position: relative;
+}
+.first1{
+  background-image:url(css/img/american-pancakes.jpg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 1% 20px 0;
+  position: relative;
+}
+.first2{
+  background-image:url(css/img/beau-cheesecake-tiramisu.jpg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 1% 20px 0;
+  position: relative;
+}
+.second{
+  background-image: url(css/img/Banana-split-1160x650-BS009445-PUB-69303.jpg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 1% 0 0;
+  border-radius: 12px;
+  position: relative;
+}
+.second1{
+  background-image: url(css/img/piggy-dessertBLOG.jpg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 1% 0 0;
+  border-radius: 12px;
+  position: relative;
+}
+.second2{
+  background-image: url(css/img/exps21585_THCA153054D10_15_4b.jpg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 1% 0 0;
+  border-radius: 12px;
+  position: relative;
+}
+.dessert{
+  background-image: url(css/img/cgmonkeyking-making-dessert-vray-test04-pn01-pps.jpg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 0 0 0;
+  border-radius: 12px;
+  position: relative;   
+}
+.dessert1{
+  background-image: url(css/img/Ice-Cream-Sandwich-Dessert-from-Jamie-Cooks-It-Up.jpg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 0 0 0;
+  border-radius: 12px;
+  position: relative;  
+}
+.dessert2{
+  background-image: url(css/img/cafcda71-279a-4ae7-9461-03fa5453d576.jpeg);
+  height: 250px;
+  background-size: cover;
+  margin: 10px 0 0 0;
+  border-radius: 12px;
+  position: relative;  
+}
+
+.price {
+  float: right;
+  font-weight:bold;
+}
+
+.top_nav {
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+}
+
+.open,
+.close {
+    display: inline-block;
+    padding: 20px 0 0 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.overlay {
+  position: fixed;
+  width: 0;
+  top: 0;
+  background-color: #2c2c2c;
+  opacity: 0.7;
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 9999;
+}
+
+.overlay-content {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-top: 50px;
+  margin-top: 30px;
+
+}
+
+.overlay-content a {
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  padding: 15px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+    font-family: 'Josefin Slab', serif;
+
+}
+
+.overlay-content a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 3px;
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+}
+.overlay-content a:hover {
+  color: rgb(172, 152, 152);
+}
+
+.overlay-content a:hover:after {
+  width: 20%;
+}
+
