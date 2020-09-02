@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/hover.css">
+          <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Josefin+Slab|Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+         <link rel="stylesheet" type="text/css" href="queries.css" >
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.css">
+        
+        <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Come a Casa</title>
+         </head>
+    <body>
+        <header class="js--home">
+        <div class="naslov">
+        <h1>Come a Casa</h1> <br>
+           <a class="dugme1 js--dugme2" href="#">Book a table</a> <br>
+            <div class="dugmadi">
+            <button class="fill1"><a href="#"><i class="fa fa-facebook-square"></i></a></button>
+            <button class="fill2"><a href="#"><i class="fa fa-instagram"></i></a></button>
+            <button class="fill3"><a href="#"><i class="fa fa-envelope"></i></a></button></div>
+        </div>
+        </header>
+        
+        <div class="top_nav">
+        <span class="open" onclick="openNavbar()">&#9776;</span>
+        <div id="navbar" class="overlay">
+            <a href="javascript:void(0);" onclick="closeNavbar()" class="close">&#9747;</a>
+            <div class="overlay-content">
+                <a class="js--dugme1" href="javascript:void(o);">Home</a>
+                <a class="js--dugme2" href="javascript:void(o);">Reservation</a>
+                <a class="js--dugme6" href="menu.html">Menu</a>
+                <a class="js--dugme3" href="javascript:void(o);">Gallery</a>
+                <a class="js--dugme4" href="javascript:void(o);">Contact</a>
+                <a class="js--dugme5" href="javascript:void(o);">Login</a>
+            </div>
+        </div>
+    </div>
+        <section class="sekcija1">
+            <div class="row">
+        <div class="col span-1-of-3">
+        <div class="card-container">
+  <div class="card">
+    <div class="front">
+      <h3>Working time <i class="ion-ios-clock"></i></h3>
+    </div>
+    <div class="back">
+     <p>Daily &#8987;<br> <span>08:00- 22:00</span> <br> <br>
+         Weekend &#8987;<br> <span>08:00- 22:00</span> <br>
+         </p> 
+    </div>
+  </div>
+</div>
+            </div>
+            <div class="col span-1-of-3">
+        <div class="card-container">
+  <div class="card1">
+    <div class="front1">
+      <h3>Chief-bot <i class="ion-ios-chatboxes"></i> </h3>
+    </div>
+    <div class="back1">
+      <p> You have a question? <br> <br>
+        <span>Talk with our Virtual Assistant Chief-bot <br> &#128172;</span> </p>
+    </div>
+  </div>
+</div>
+            </div>
+            <div class="col span-1-of-3 js--kontakt">
+        <div class="card-container">
+  <div class="card2">
+    <div class="front2">
+    <h3>Contact <i class="ion-ios-telephone"></i></h3>
+    </div>
+    <div class="back2">
+      <p>tel:<span> 038/220 - 384</span> <br>
+          fax: <span>038/220 - 385</span> <br> <br>
+         &#128233;<span>comeacasa@live.com</span>
+         &#128205;<span>Panorama bb</span>
+        </p> 
+    </div>
+  </div>
+</div>
+            </div>
+                </div>
+    </section>
+        
+    
+    
+    
+    <section class="reserve js--rezervacija">
+        <h3 class="ml3">RESERVATION</h3>
+        
+        <div class="row">
+            <form method="post" action="#" class="rezervacija">
+                <div class="row">
+                  
+                    <div class="col span-1-of-2 kolona1">
+                    <input class="input" type="text" name="ime" id="ime" placeholder="Name*" required></div>
+              
+               
+                    <div class="col span-1-of-2">
+                      <input class="input" type="tel" name="phone" id="phone" placeholder="Phone number*" required>  
+                    </div>
+                    
+                </div>
+                <div class="row">
+                  
+                    <div class="col span-1-of-2 kolona1">
+                    <input class="input" type="date" name="datum" id="datum" required></div>
+              
+               
+                    <div class="col span-1-of-2">
+                      <input class="input" type="time" name="vrijeme" id="vrijeme" required>  
+                    </div>
+                    
+                </div>
+                <div class="row">
+                  
+                    <div class="col span-1-of-2 kolona 1">
+                    <input class="input" type="text" name="email" id="email" placeholder="Email*" required></div>
+              
+               
+                    <div class="col span-1-of-2">
+                      <select name="rezervisi" id="rezervisi">
+                        <option value="dvoje"selected>Stol za 2</option>
+                        <option value="troje">Stol za 3</option>
+                        <option value="cetvero">Stol za 4</option>
+                        <option value="petero">Stol za 5</option>
+                        <option value="šestero">Stol za 6</option>
+                        <option value="vise">Stol za više od 6</option>
+                        </select>
+                        
+                    </div>
+                    
+                </div>
+                    
+            <div class="row">
+                    <div class="col span-2-of-2">
+                        <textarea name="text" placeholder="Special notes*"></textarea>
+                    </div>
+                
+                </div>
+                    
+                    <div class="row">
+                        <div class="col span-2-of-2">
+                            <input class="dugme-send" type="submit" value="Reserve now">
+                        </div>
+                    </div>
+                <div><p>You can also call us for reservation 00387 220 384 </p></div>
+            </form>     
+        </div>
+    
+    </section>
+    
+    
+    
+    
+    
+     <div class="slider js--galerija">
+  <ul class="slider-list">
+    <li class="slider-list__item slider-list__item_active" style="background-image: url(resources/img/valls_can_font_restaurant_photography_20.jpg);"></li>
+    <li class="slider-list__item" style="transform: translateX(100%); background-image: url(resources/img/Chef-Kitchen-34.jpg);"></li>
+    <li class="slider-list__item" style="transform: translateX(100%); background-image: url(resources/css/img/StockSnap_NBCKVD5IDL.jpg);"></li>
+    <li class="slider-list__item" style="transform: translateX(100%);"><p>“People who love to eat are always the best people.” <br> <br>
+      Julia Child </p></li>
+    <li class="slider-list__item" style="transform: translateX(100%); background-image: url(resources/img/valls_can_font_restaurant_photography_15.jpg);"></li>
+    <li class="slider-list__item" style="transform: translateX(100%); background-image: url(resources/img/60.jpg);"></li>
+    <li class="slider-list__item" style="transform: translateX(100%); background-image: url(resources/img/pasta.jpg);"></li>
+    <li class="slider-list__item" style="transform: translateX(100%);"><p>“Anything is good if it’s made of chocolate.” <br> <br>Jo Brand</p></li>
+      <li class="slider-list__item" style="transform: translateX(100%); background-image: url(resources/css/img/iec_6337.jpg);"></li>
+  </ul>
+  <div class="slider__nav-bar"><a class="nav-control"></a><a class="nav-control"></a><a class="nav-control"></a><a class="nav-control"></a></div>
+  <div class="slider__controls"><a class="slider__arrow slider__arrow_prev"></a><a class="slider__arrow slider__arrow_next"></a></div>
+</div>   
+  
+    
+    
+    
+     <div class="cotn_principal">
+         <div class="onama js--onama">
+         <h4>About us</h4>
+         <p>Welcome to Come a Casa, your number one source for all food. We're dedicated to providing you the very best of food, with an emphasis on quality, taste and your wish.
+
+<br><br>
+Founded in 2000 by Luigi Giovano, Come a Casa has come a long way from its beginnings in Toscana. When Luigi first started out, his passion for cooking, drove them to start their own business.
+<br><br>
+
+We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us. </p>
+<br> <br>
+
+<p class="founder">Sincerely,
+             <br>
+
+Luigi Giovano </p> 
+         
+         </div>
+<div class="cont_centrar js--login">
+
+  <div class="cont_login">
+<div class="cont_info_log_sign_up">
+      <div class="col_md_login">
+<div class="cont_ba_opcitiy">
+        
+        
+  <p>You have account? </p> 
+  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+  </div>
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <p>Don't have account? </p>
+
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+</div>
+  </div>
+       </div>
+
+    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="resources/img/autumn_food_photography_0.jpg" alt="" />
+       </div>
+       
+    </div>
+<div class="cont_forms" >
+    <div class="cont_img_back_">
+       <img src="resources/img/autumn_food_photography_0.jpg" alt="" />
+       </div>
+ <div class="cont_form_login">
+<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons js--dugme5">&#8592;</i></a>
+   <h2>LOGIN</h2>
+ <input type="text" placeholder="Email" />
+<input type="password" placeholder="Password" />
+<button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+  
+   <div class="cont_form_sign_up">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons js--dugme5">&#8592;</i></a>
+     <h2>SIGN UP</h2>
+<input type="text" placeholder="Email" />
+<input type="text" placeholder="User" />
+<input type="password" placeholder="Password" />
+<input type="password" placeholder="Confirm Password" />
+<button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+
+  </div>
+
+    </div>
+    
+  </div>
+ </div>
+</div>   
+        
+   
+
+    
+        <footer id="kontakt">
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a class="js--dugme7" href="#">About us</a></li>
+                    <li><a class="js--dugme8"href="#">Menu</a></li>
+                    <li><a class="js--dugme9" href="#">Contact</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="col span 1-of-2">
+                <ul class="social-nav">
+                    <li><a href="#" class="fb"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        <div class="row">
+            <p>Copyright&copy;2019 by Come a Casa. All rights reserved.</p></div>
+        
+    
+
+    
+    
+    
+    </footer>
+    
+    <a href="javascript:" id="return-to-top"><i class="ion-chevron-up"></i></a>
+
+
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+   <script src="resources/js/script.js"></script>
+    
+    </body>
+    
+    
+    
+</html>

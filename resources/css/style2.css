@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: #555;
+    font-family:'Playfair Display';
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.31)), url(img/salad.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+h1{
+    position: absolute;
+    top:17%;
+    left: 50%;
+    color: #595959;
+    font-size: 350%;
+    font-weight: 100;
+    letter-spacing: 3px;
+    word-spacing: 4px;  
+}
+.ml12 {
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.menu{
+    position: absolute;
+    top: 17%;
+    left: 80%;
+}
+.menu li{
+    display:block;
+    border: 1px solid rgba(255, 255, 255, 0);
+    list-style: none;
+    margin-bottom: 60px;
+    padding: 20px 65px;
+    text-align: center;
+    background: rgba(209, 178, 96, 0.81);
+     
+}
+.menu li:hover,
+.menu li:active{
+    background:rgba(111, 175, 114, 0.75);
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    
+}
+.menu .last{
+    color: rgba(240, 44, 44, 0.71);
+}
+
+
+.button-jittery  {
+    animation: jittery 4s infinite;  }
+.button-jittery:hover{
+animation: heartbeat 0.3s infinite;
+	}
+
+
+@keyframes jittery {
+	5%,
+	50% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	15% {
+		transform: scale(1.15);
+	}
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}
+
+@keyframes heartbeat {
+	50% {
+		transform: scale(1.1);
+	}
+}
+
+.top_nav {
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+}
+
+.open {
+    display: inline-block;
+    padding: 20px 0 0 20px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: rgba(209, 178, 96, 0.83);
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
